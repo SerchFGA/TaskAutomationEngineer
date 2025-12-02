@@ -10,7 +10,7 @@ venv/
 
 # Data
 data/raw/
-finance.db
+# finance.db (Commented out to include in repo for easy deployment demo)
 
 # IDE
 .vscode/
