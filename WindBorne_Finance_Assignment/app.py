@@ -4,10 +4,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+import plotly.graph_objects as go
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from models import Company, FinancialStatement, DATABASE_URL
 import json
 
 # Database Connection
+# DATABASE_URL is already configured with absolute path in models.py
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 
