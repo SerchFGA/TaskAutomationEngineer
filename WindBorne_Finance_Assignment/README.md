@@ -63,17 +63,23 @@ This project is a full-stack financial data pipeline and dashboard designed to a
     Access at: `http://localhost:8501`
 
 ## Deployment (Getting a Public URL)
-To satisfy the "Public dashboard URL" deliverable, you can deploy this app for free using **Streamlit Community Cloud**:
+**Live Demo:** [https://taskautomationengineer.streamlit.app/](https://taskautomationengineer.streamlit.app/)
 
+To satisfy the "Public dashboard URL" deliverable, this app is deployed using **Streamlit Community Cloud**.
+
+### Database Strategy for Demo
+The repository includes a pre-populated SQLite database (`finance.db`).
+*   **Why?** To ensure the dashboard works immediately upon deployment without requiring a separate PostgreSQL server or running the ETL pipeline in the cloud.
+*   **Production:** In a real-world scenario, this would connect to a hosted PostgreSQL instance (e.g., AWS RDS, Supabase) using the `DATABASE_URL` environment variable.
+
+### How to Deploy Your Own
 1.  **Push to GitHub**: Ensure this project is in a public GitHub repository.
-    *   *Note:* The `finance.db` file is included in the repo so the app works immediately without needing a separate database server.
 2.  **Sign up/Login**: Go to [share.streamlit.io](https://share.streamlit.io/).
 3.  **Deploy**:
     *   Click "New app".
     *   Select your GitHub repository.
     *   Set "Main file path" to `app.py`.
     *   Click "Deploy".
-4.  **Result**: You will get a public URL like `https://your-repo-name.streamlit.app`.
 
 ## Project Structure
 - `app.py`: Main dashboard application.
